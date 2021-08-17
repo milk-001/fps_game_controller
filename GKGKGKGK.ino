@@ -95,9 +95,9 @@ void loop(){
     Keyboard.release('q');
   }
   if(digitalRead(shift) == HIGH){
-    Keyboard.press('KEY_LEFT_SHIFT');
+    Keyboard.press(KEY_LEFT_SHIFT);
     delay(200);
-    Keyboard.release('KEY_LEFT_SHIFT');
+    Keyboard.release(KEY_LEFT_SHIFT);
   }
   if (x==0) {
     Keyboard.press('s');
@@ -110,9 +110,9 @@ void loop(){
     Keyboard.release('w');
   }
   if (y==0) {
-    Keyboard.press('s');
-    delay(200);ttttttt
-    Keyboard.release('s');
+    Keyboard.press('d');
+    delay(200);
+    Keyboard.release('d');
   }
   if (y==1023) {
     Keyboard.press('a');
@@ -120,9 +120,9 @@ void loop(){
     Keyboard.release('a');
   }
   if (digitalRead(sw)==LOW) {
-    Keyboard.press('r');
+    Keyboard.press(KEY_LEFT_CTRL);
     delay(200);
-    Keyboard.release('r');
+    Keyboard.release(KEY_LEFT_CTRL);
   }
 }
   
