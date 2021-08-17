@@ -64,65 +64,52 @@ void loop(){
 
   if(digitalRead(mouse_l) == HIGH){
     Mouse.press(MOUSE_LEFT);
-    delay(100);
     Mouse.release(MOUSE_LEFT);
   }
 
   if(digitalRead(mouse_r) == HIGH){
     Mouse.press(MOUSE_RIGHT);
-    delay(100);
     Mouse.release(MOUSE_RIGHT);
   }
 
   if(digitalRead(r) == HIGH){
     Keyboard.press('r');
-    delay(200);
     Keyboard.release('r');
   }
   if(digitalRead(f) == HIGH){
     Keyboard.press('f');
-    delay(200);
     Keyboard.release('f');
   }
   if(digitalRead(jump) == HIGH){
     Keyboard.press(' ');
-    delay(200);
     Keyboard.release(' ');
   }
   if(digitalRead(q) == HIGH){
     Keyboard.press('q');
-    delay(200);
     Keyboard.release('q');
   }
   if(digitalRead(shift) == HIGH){
     Keyboard.press(KEY_LEFT_SHIFT);
-    delay(200);
     Keyboard.release(KEY_LEFT_SHIFT);
   }
   if (x==0) {
     Keyboard.press('s');
-    delay(200);
     Keyboard.release('s');
   }
-  if (x==1023) {
+  if (x > 1000) {
     Keyboard.press('w');
-    delay(200);
     Keyboard.release('w');
   }
   if (y==0) {
-    Keyboard.press('d');
-    delay(200);
-    Keyboard.release('d');
-  }
-  if (y==1023) {
     Keyboard.press('a');
-    delay(200);
     Keyboard.release('a');
+  }
+  if (y > 1000) {
+    Keyboard.press('d');
+    Keyboard.release('d');
   }
   if (digitalRead(sw)==LOW) {
     Keyboard.press(KEY_LEFT_CTRL);
-    delay(200);
     Keyboard.release(KEY_LEFT_CTRL);
   }
 }
-  
