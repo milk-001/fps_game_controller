@@ -58,36 +58,36 @@ void loop(){
   gyroX = GyX / Sensitivity / 1.1 * -1;
   gyroZ = GyZ / Sensitivity * -1;
 
-  if(digitalRead(mouse_moving) == HIGH){
+  if(digitalRead(mouse_moving) == HIGH){// if the mouse_moving butten pushing airmouse is on
     Mouse.move(gyroZ, gyroX);
   }
-  if(digitalRead(mouse_l) == HIGH){
+  if(digitalRead(mouse_l) == HIGH){// it is control to mouse left butten form pin 4
     Mouse.press(MOUSE_LEFT);
     Mouse.release(MOUSE_LEFT);
   }
 
-  if(digitalRead(mouse_r) == HIGH){
+  if(digitalRead(mouse_r) == HIGH){// it is control to mouse right butten form pin 5
     Mouse.press(MOUSE_RIGHT);
     Mouse.release(MOUSE_RIGHT);
   }
 
-  if(digitalRead(r) == HIGH){
+  if(digitalRead(r) == HIGH){//it is control to keyboard butten  r form pin 6
     Keyboard.press('r');
     Keyboard.release('r');
   }
-  if(digitalRead(f) == HIGH){
+  if(digitalRead(f) == HIGH){///it is control to keyboard butten  f form pin 9
     Keyboard.press('f');
     Keyboard.release('f');
   }
-  if(digitalRead(jump) == HIGH){
+  if(digitalRead(jump) == HIGH){//it is control to keyboard butten  space form pin 6
     Keyboard.press(' ');
     Keyboard.release(' ');
   }
-  if(digitalRead(q) == HIGH){
+  if(digitalRead(q) == HIGH){//it is control to keyboard butten  q form pin 8
     Keyboard.press('q');
     Keyboard.release('q');
   }
-  if(digitalRead(shift) == HIGH){
+  if(digitalRead(shift) == HIGH){//it is control to keyboard butten  shift form pin 15
     Keyboard.press(KEY_LEFT_SHIFT);
     Keyboard.release(KEY_LEFT_SHIFT);
   }
