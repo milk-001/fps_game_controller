@@ -1,6 +1,6 @@
 # fps_game_controller
 fps_controller
-hello thank you for download 
+hello 
 I'm milk-001
 I'm make this project two days and alone
 this project use arduino promicro 
